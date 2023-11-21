@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" spacing="10" alignment="CENTER" fx:controller="com.example.apputilitarios.ConversorMoedasController" prefHeight="400.0" prefWidth="600.0">
+    <Label text="Valor em Reais:" />
+    <TextField fx:id="valorReaisText" />
+    <Label text="Escolha a Moeda:" />
+    <ComboBox fx:id="moedaComboBox">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="Dólar Americano" />
+                <String fx:value="Euro" />
+                <String fx:value="Libra Esterlina" />
+            </FXCollections>
+        </items>
+    </ComboBox>
+    <Button fx:id="calcularButton" onMouseClicked="#onCalcularButtonClick" text="Converter" />
+    <Label fx:id="resultadoLabel" />
+</VBox>

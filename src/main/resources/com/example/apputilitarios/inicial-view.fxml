@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.ImageView?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      alignment="CENTER"
+      spacing="5"
+      fx:controller="com.example.apputilitarios.InicialController"
+      prefHeight="400.0" prefWidth="600.0">
+
+    <Button fx:id="mediaButton" onMouseClicked="#onMediaButtonClick" text="Calcular média de notas" />
+    <Button fx:id="imcButton" onMouseClicked="#onIMCButtonClick" text="Calcular IMC" />
+    <Button fx:id="moedasButton" onMouseClicked="#onMoedasButtonClick" text="Converte Moedas" />
+    <Button fx:id="faculdadeButton" onMouseClicked="#onFaculdadeButtonClick" text="Simula Valor Faculdade" />
+    <Button fx:id="doacoesButton" onMouseClicked="#onDoacoesButtonClick" text="Gestor de Doações" />
+    <Button fx:id="sairButton" onMouseClicked="#onSairButtonClick" text="Sair" />
+
+</VBox>

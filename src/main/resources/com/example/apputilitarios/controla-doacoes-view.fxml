@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" spacing="10" alignment="CENTER" fx:controller="com.example.apputilitarios.DoacoesController" prefHeight="400.0" prefWidth="600.0">
+    <Label text="Valor da Doação:" />
+    <TextField fx:id="valorDoacaoTextField" />
+
+    <Button fx:id="adicionarButton" onMouseClicked="#onAdicionarButtonClick" text="Adicionar" />
+
+    <ListView fx:id="doacoesListView" />
+
+    <Label text="Valor Total das Doações:" />
+    <Label fx:id="valorTotalLabel" />
+</VBox>

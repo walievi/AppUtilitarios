@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            spacing="10"
+            alignment="CENTER"
+            fx:controller="com.example.apputilitarios.MediaNotasController"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <Label fx:id="nota1Label" text="Nota 1:" />
+    <TextField fx:id="nota1Text" />
+    <Label fx:id="nota2Label" text="Nota 2:" />
+    <TextField fx:id="nota2Text" />
+    <Label fx:id="nota3Label" text="Nota 3:" />
+    <TextField fx:id="nota3Text" />
+    <Button fx:id="calcularButton" onMouseClicked="#onCalcularButtonClick" text="Calcular" />
+    <Label fx:id="resultadoLabel" />
+
+</VBox>

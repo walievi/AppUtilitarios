@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import java.lang.String?>
+
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" spacing="10" alignment="CENTER" fx:controller="com.example.apputilitarios.FaculdadeController" prefHeight="400.0" prefWidth="600.0">
+    <Label text="Quantidade de Créditos Financeiros:" />
+    <TextField fx:id="creditosTextField" />
+
+    <Label text="Escolha o Curso:" />
+    <ComboBox fx:id="cursoComboBox">
+        <String fx:value="REDES" />
+        <String fx:value="ADS" />
+        <String fx:value="ADM" />
+    </ComboBox>
+
+    <Button fx:id="calcularButton" onMouseClicked="#onCalcularButtonClick" text="Calcular" />
+
+    <Label text="Valor Total do Semestre:" />
+    <Label fx:id="valorTotalLabel" />
+
+    <Label text="Valor da Parcela:" />
+    <Label fx:id="valorParcelaLabel" />
+</VBox>
